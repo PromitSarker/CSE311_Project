@@ -7,27 +7,29 @@
     <link rel="Stylesheet" href="Stylesheet.css" />
     <title>Login</title>
   </head>
-  <body>
-      <form class="login">
-  <input type="text" placeholder="Email" class="mail"> <br> <br>
-  <input type="password" placeholder="Password" class="password"> <br> <br>
-  
-  <input type="radio" name="account" checked />
-        <label for="personal" class="radio">Personal</label>
-  <input type="radio" name="account" />
-        <label for="company" class="radio">Company</label>
-  <br>
-  
-  <button class="button">Login</button> <br> <br>
-  
-  <table>
-  <tr> 
-    <th><a href="forgotpass.html" class="reg">Forgot Password</a> </th> 
-   <th><a href="signup.html" class="reg"> Register</a> </tr></th>
-  </table>  
-  
 
-</form>
+  <body>
+      <form class="login" action="Login.php" method="POST">
+        <input type="text" placeholder="Email" class="mail" name="mail"> <br> <br>
+        <input type="password" placeholder="Password" class="password" name="password"> <br> <br>
+  
+        <input type="radio" name="account" checked />
+        <label for="personal" class="radio">Personal</label>
+        <input type="radio" name="account" />
+        <label for="company" class="radio">Company</label>
+       <br>
+  
+        <input type =  "submit" class = "button" value = "Login"/>  
+        <br> <br>
+  
+        <table>
+          <tr> 
+          <th><a href="forgotpass.html" class="reg">Forgot Password</a> </th> 
+          <th><a href="signup.html" class="reg"> Register</a> 
+          </tr></th>
+        </table>  
+
+      </form>
 
  </body>
 </html>

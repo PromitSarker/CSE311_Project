@@ -1,9 +1,9 @@
 <?php
 session_start();
-
+include("server.php");
 $name = $mail = $password = "";
 $name_err = $mail_err = $password_err = "";
-$db = mysqli_connect("localhost", "root", "", "login");
+
 if(isset($_POST['reg']))
 {
     // Escaping all the special character and recieving input values from the form
