@@ -1,25 +1,29 @@
 body {
-  background-color: #394a51;
   text-align: left;
+  background-color: beige;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Syne", sans-serif;
 }
 form {
-    display: inline-block;
+  display: inline-block;
 }
-table{
-  width:80%
+table {
+  width: 80%;
 }
-.login {
+.login , .empadd{
   background-image: url("");
   background-color: #7fa99b;
   padding: 30px 30px 30px 30px;
   border-radius: 10px;
-  margin-right: 25% ; 
+  margin-right: 25%;
   margin-left: 25%;
   margin-top: 25%;
   width: 50%;
 }
 
-.button {
+button {
   cursor: pointer;
   color: rgb(105, 96, 96);
   font-size: 10px;
@@ -31,10 +35,28 @@ table{
   margin-left: 0px;
   border-radius: 5px;
 }
-.button:hover {
-    background-color: darken(50%);
+button:hover {
+  background-color: darken(50%);
 }
-.mail, .name, .password{
+.address {
+  border-radius: 5px;
+  border: 0;
+  margin-left: 13px;
+  padding: 7px 119px;
+  text-align: center;
+}
+
+ .date {
+   border-radius: 5px;
+  border: 0;
+  padding: 7px 41px;
+  margin-left: 10px;
+ }
+
+.mail,
+.name,
+.password, .number {
+  margin-left: 10px;
   border-radius: 5px;
   border: 0;
   padding: 7px 15px;
@@ -44,8 +66,41 @@ table{
   background-color: #7fa99b;
   padding: 30px 10px 40px 40px;
   border-radius: 10px;
-  margin-right: 25% ; 
+  margin-right: 25%;
   margin-left: 25%;
   margin-top: 25%;
   width: 50%;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  display: flex;
+  color: orange;
+  font-size: 18px ;
+  background-color: #000015;
+  border-radius: 5px;
+}
+
+.bemp{
+  margin-left:166px ;
+}
+
+.baritem{
+padding:8px 16px;
+float:left;
+width:auto;
+border:none;
+display:block;
+outline:0;
+position:static;
+text-align:left;
+white-space:normal;
+color: blanchedalmond;
 }

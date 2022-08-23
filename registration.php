@@ -32,7 +32,7 @@ if(isset($_POST['reg']))
         $password_err = "Password must have atleast 6 characters.";
     }
 
-    $user_check_query = "SELECT * FROM users WHERE name='$name' OR mail='$mail' LIMIT 1";
+    $user_check_query = "SELECT * FROM users WHERE name='$name' OR mail='$mail'";
     $result = mysqli_query($db, $user_check_query);
     $user = mysqli_fetch_assoc($result);
   

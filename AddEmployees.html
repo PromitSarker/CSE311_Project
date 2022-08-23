@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Stylesheet" href="Stylesheet.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="empadd">
+      <form method="post" action="AddEmployees.php">
+        <table>
+          <tr>
+            <td>
+              <input
+                type="text"
+                name="name"
+                class="name"
+                placeholder="Name"
+                required
+              />
+            </td>
+            <td>
+              <input
+                type="email"
+                name="mail"
+                class="mail"
+                placeholder="Email"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                name="number"
+                class="number"
+                placeholder="Number"
+                required
+              />
+            </td>
+            <td>
+              <input
+                type="date"
+                name="date"
+                class="date"
+                placeholder="Email"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+        <input
+          type="text"
+          name="address"
+          class="address"
+          placeholder="Address"
+          required
+        />
+        <br />
+
+        <button class="bemp" type="submit" name="emp">Add Employee</button>
+      </form>
+    </div>
+  </body>
+</html>
