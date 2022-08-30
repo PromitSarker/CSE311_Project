@@ -1,0 +1,30 @@
+body{
+    background-color: bisque;
+}
+
+th, td, table{
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    border-collapse: collapse;
+    border:2px solid black;
+    width:50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family:"Times New Roman", Times, serif;
+    text-align: center;
+    color: coral;
+    background-color: black;
+    background-size: auto;
+}
+th{
+    height: 50px;    
+    background-color: rgb(80, 29, 29);
+    color:whitesmoke;
+  }
+
+tr:hover {background-color: coral;}
+
+
