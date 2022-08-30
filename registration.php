@@ -35,7 +35,8 @@ if(isset($_POST['reg']))
     $user_check_query = "SELECT * FROM users WHERE name='$name' OR mail='$mail'";
     $result = mysqli_query($db, $user_check_query);
     $user = mysqli_fetch_assoc($result);
-  
+  $count = mysqli_num_rows($result);
+
   if ($user) 
   {
     if ($user['name'] === $name) {
@@ -47,11 +48,16 @@ if(isset($_POST['reg']))
     }
   }
 
+  if($count == 1) {
+         header('refresh:1;url=Login.html');
+      }
+
   	$query = "INSERT INTO users (name, mail, password) 
   			  VALUES('$name', '$mail', '$password')";
   	mysqli_query($db, $query);
 
     $_SESSION['name'] = $name;
   	$_SESSION['success'] = "You are now logged in";
+    header('location: Login.html');
 }
 ?>

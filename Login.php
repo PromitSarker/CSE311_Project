@@ -27,7 +27,7 @@
       $count = mysqli_num_rows($result);
 		
       if($count == 1) {
-         header('Location: login.php?redirect=plan1.php');
+         header('refresh:1;url=HomeScreen.php');
       }
       else {
          echo "Invalid Mail or Pass";
