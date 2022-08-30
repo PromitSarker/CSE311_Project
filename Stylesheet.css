@@ -5,6 +5,7 @@ body {
   background-position: center;
   background-size: cover;
   font-family: "Syne", sans-serif;
+  border: 5px;
 }
 form {
   display: inline-block;
@@ -12,18 +13,53 @@ form {
 table {
   width: 80%;
 }
-.login , .empadd{
+.emplist {
+  margin: 5px;
+  padding: 10px;
+  background-color: #7fa99b;
+  border-radius: 10px;
+  margin-top: 3%;
+}
+
+.content {
+	width:720px;
+	margin:0 auto 0 auto;
+	text-align:center;
+}
+.login,
+.empadd {
   background-image: url("");
   background-color: #7fa99b;
   padding: 30px 30px 30px 30px;
   border-radius: 10px;
   margin-right: 25%;
   margin-left: 25%;
-  margin-top: 25%;
+  margin-top: 15%;
   width: 50%;
 }
 
-button {
+.forpass {
+   background-color: #7fa99b;
+  padding: 30px 30px 30px 30px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15%;
+  width: 100%;
+}
+
+.logo {
+	float:right;
+	margin-right:30px;
+}
+
+.td1 {
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 4px;
+}
+
+.button {
   cursor: pointer;
   color: rgb(105, 96, 96);
   font-size: 10px;
@@ -35,7 +71,8 @@ button {
   margin-left: 0px;
   border-radius: 5px;
 }
-button:hover {
+
+.button:hover {
   background-color: darken(50%);
 }
 .address {
@@ -46,16 +83,17 @@ button:hover {
   text-align: center;
 }
 
- .date {
-   border-radius: 5px;
+.date {
+  border-radius: 5px;
   border: 0;
-  padding: 7px 41px;
+  padding: 5.7px 41px;
   margin-left: 10px;
- }
+}
 
 .mail,
 .name,
-.password, .number {
+.password,
+.number {
   margin-left: 10px;
   border-radius: 5px;
   border: 0;
@@ -68,7 +106,8 @@ button:hover {
   border-radius: 10px;
   margin-right: 25%;
   margin-left: 25%;
-  margin-top: 25%;
+  margin-top: 10%;
+  margin-bottom: 25%;
   width: 50%;
 }
 
@@ -83,24 +122,24 @@ button:hover {
 .header {
   display: flex;
   color: orange;
-  font-size: 18px ;
+  font-size: 18px;
   background-color: #000015;
   border-radius: 5px;
 }
 
-.bemp{
-  margin-left:166px ;
+.bemp {
+  margin-left: 166px;
 }
 
-.baritem{
-padding:8px 16px;
-float:left;
-width:auto;
-border:none;
-display:block;
-outline:0;
-position:static;
-text-align:left;
-white-space:normal;
-color: blanchedalmond;
+.baritem {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+  position: static;
+  text-align: left;
+  white-space: normal;
+  color: blanchedalmond;
 }

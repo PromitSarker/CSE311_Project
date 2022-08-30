@@ -1,7 +1,7 @@
 <?php
 
    include('server.php');
-    $mail_err = $password_err = " " ; 
+    $mail_err = $password_err = $mail = $password = " " ; 
 
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       if(empty($_POST["mail"]))
@@ -27,7 +27,7 @@
       $count = mysqli_num_rows($result);
 		
       if($count == 1) {
-         echo "Login successful";
+         header('Location: login.php?redirect=plan1.php');
       }
       else {
          echo "Invalid Mail or Pass";
