@@ -35,5 +35,6 @@ if(isset($_POST['emp']))
     $query = "INSERT INTO employee (name, mail, number, date, address ) 
   			  VALUES('$name', '$mail', $number, $date, '$address')";
     mysqli_query($db, $query);
+    header('location: AddEmployees.html');
 }
 ?>
